@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>flex box project</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">flexbox
+            </div>
+                <ul class="nav">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>         
+        </div> 
+    </nav>
+
+    <!-- header section -->
+    <header class="header">
+        <div class="container">
+            <div class="style-box">
+                <h1>flexbox</h1>
+                <p class="paragraph">
+                    Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces.
+                </p>
+            </div>
+            <img src="logo.png">
+        </div>
+    </header>
+
+    <!-- cards section -->
+    <section class="boxes">
+        <div class="container" id="about">
+            <div class="box">
+                <h2><i class="fas fa-arrows-alt-v">Main Use Case</i></h2>
+                <p>Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space. It makes responsive design easier.</p>
+            </div>
+                
+            <div class="box">
+                <h2><i class="fas fa-arrows-alt-v">Main Use Case</i></h2>
+                <p>CSS flexbox is great to use for the general layout of your website or app. It's easy to learn, is supported in all modern browsers, and it doesn't take that long to figure out the basics. </p>
+            </div>
+
+            <div class="box">
+                <h2><i class="fas fa-arrows-alt-v">Main Use Case</i></h2>
+                <p>flexbox deals with layout in one dimension at a time — either as a row or as a column.</p>
+            </div>  
+        </div>
+    </section>
+    
+    <!-- input field -->
+
+    <section class="contact-container">
+    <div class="container">
+        <div class="contact" id="contact">
+            <label for="name"> Name: <input type="text" class="inputs" placeholder="Name">  </label>
+            <label for="email"> Email: <input type="email" class="inputs" placeholder="name@email.com"> </label>
+           <label for="submit"><button class="inputs btn">Submit</button></label>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="box">
+                <li><a href="#contact" >Contact</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="" >Share</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

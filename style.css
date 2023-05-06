@@ -1,0 +1,188 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+.navbar{
+   background-color: rgb(0, 0, 0); 
+   color: rgb(255, 255, 255);
+   height: 60px;
+}
+
+.logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a{
+   color: rgb(255, 255, 255); 
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.navbar a:hover{
+text-decoration: underline;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+.header{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    min-height: 400px;
+}
+
+.style-box{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.paragraph{
+    font-size: 1.2rem;
+}
+
+.header img{
+    max-width: 400px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 1;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 30px 40px rgb(114, 102, 102);
+    padding: 15px 20px;
+} 
+.box i{
+    margin-right: 10px;
+}
+
+.footer-container .box{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container .box a{
+   margin-left: 20px;
+   text-decoration: none;
+   color: white;
+   font-size: medium;
+}
+
+.contact-container{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    margin: 25px 25px;
+    border-radius: 7px;
+    
+}
+
+.contact-container .container .contact{
+    margin: 20px;
+    display: flex;
+    color: #ffffff;
+}
+
+.inputs{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;  
+}
+
+
+/* hover effect */
+
+.contact-container .container .contact .btn:hover{
+   background-color: rgb(0, 0, 0);
+   color: #ffffff;
+ }
+
+.footer-container .box a:hover{
+    text-decoration: underline;
+ }
+
+ /* .box:hover{
+     box-shadow: 0 30px 40px rgb(114, 102, 102);
+ } */
+
+
+@media(max-width:750px) {
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container{
+        display: block;
+        text-align: center;
+    }
+
+    .contact-container{
+        height: 200px;
+    }
+
+    .contact-container .container .contact{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .contact-container .container .contact .btn{
+        width: 100px;
+     }
+
+}
